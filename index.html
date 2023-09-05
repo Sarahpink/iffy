@@ -9,9 +9,14 @@
 <body>
     <main>
         <h1>Iffy</h1>
-        <img src="https://picsum.photos/id/343/200/300" alt= "image displayed because not github pages">
         <script>
-            console.log('window.location.host.includes(stuff)',window.location.host.includes('github.io'))
+            document.open()
+            if ('window.location.host.includes(stuff)',window.location.host.includes('github.io')) { 
+                document.write('<img src="https://picsum.photos/id/200/200/300" alt= "image displayed because not github pages">')
+            } else {
+                document.write('<img src="https://picsum.photos/id/343/200/300" alt= "image displayed because not github pages">')
+            }
+            document.close()
         </script>
     </main>
 </body>
